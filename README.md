@@ -175,3 +175,9 @@ data = np.load("output/simulation_data.npz")
 print(data["names"])
 print(data["rir"].shape)  # channels × samples, last channel is the sum for multiple speakers
 ```
+
+## License
+
+This project's original code and documentation are licensed under the
+[MIT License](LICENSE). Dependencies retain their own licenses; see
+[Third-party notices](THIRD_PARTY_NOTICES.md).
