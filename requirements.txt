@@ -1,0 +1,5 @@
+numpy>=1.24,<3
+scipy>=1.10,<2
+matplotlib>=3.7,<4
+pyroomacoustics>=0.10,<0.11
+PySide6>=6.6,<7

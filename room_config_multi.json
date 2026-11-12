@@ -1,0 +1,77 @@
+{
+  "room": {
+    "dimensions_m": [
+      4.5,
+      6.0,
+      2.7
+    ],
+    "absorption": {
+      "west": 0.15,
+      "east": 0.15,
+      "south": 0.2,
+      "north": 0.25,
+      "floor": 0.3,
+      "ceiling": 0.2
+    }
+  },
+  "speakers": [
+    {
+      "name": "Left",
+      "position_m": [
+        1.0,
+        1.0,
+        1.2
+      ],
+      "gain_db": 0.0,
+      "delay_ms": 0.0
+    },
+    {
+      "name": "Right",
+      "position_m": [
+        3.5,
+        1.0,
+        1.2
+      ],
+      "gain_db": 0.0,
+      "delay_ms": 0.0
+    }
+  ],
+  "simulation": {
+    "sample_rate_hz": 16000,
+    "duration_s": 0.5,
+    "max_order": "auto"
+  },
+  "plots": {
+    "frequency_range_hz": [
+      20,
+      7000
+    ],
+    "smoothing_octaves": 0.08333333333333333,
+    "bass_range_hz": [
+      20,
+      300
+    ],
+    "waterfall_duration_s": 0.3,
+    "waterfall_window_s": 0.2,
+    "waterfall_step_s": 0.01,
+    "waterfall_floor_db": -60
+  },
+  "listeners": [
+    {
+      "name": "Listener 1",
+      "position_m": [
+        2.25,
+        3.8,
+        1.2
+      ]
+    },
+    {
+      "name": "Listener 2",
+      "position_m": [
+        3.1,
+        4.5,
+        1.2
+      ]
+    }
+  ]
+}

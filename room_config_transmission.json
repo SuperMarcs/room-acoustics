@@ -1,0 +1,163 @@
+{
+  "speakers": [
+    {
+      "name": "Left",
+      "position_m": [
+        1.0,
+        2.75,
+        1.2
+      ],
+      "gain_db": 0,
+      "delay_ms": 0
+    },
+    {
+      "name": "Right",
+      "position_m": [
+        3.5,
+        2.75,
+        1.2
+      ],
+      "gain_db": 0,
+      "delay_ms": 0
+    }
+  ],
+  "simulation": {
+    "sample_rate_hz": 16000,
+    "duration_s": 0.5,
+    "max_order": 2,
+    "ray_tracing": true,
+    "n_rays": 50000,
+    "seed": 42,
+    "scattering": 0.15,
+    "receiver_radius_m": 0.12
+  },
+  "plots": {
+    "frequency_range_hz": [
+      20,
+      7000
+    ],
+    "smoothing_octaves": 0.08333333333333333,
+    "bass_range_hz": [
+      20,
+      300
+    ],
+    "waterfall_duration_s": 0.3,
+    "waterfall_window_s": 0.2,
+    "waterfall_step_s": 0.01,
+    "waterfall_floor_db": -60
+  },
+  "listeners": [
+    {
+      "name": "Seat A",
+      "position_m": [
+        2.25,
+        5.3,
+        1.2
+      ]
+    },
+    {
+      "name": "Seat B",
+      "position_m": [
+        6.65,
+        4.5,
+        1.2
+      ]
+    },
+    {
+      "name": "Corridor seat",
+      "position_m": [
+        4.3,
+        0.8,
+        1.2
+      ]
+    }
+  ],
+  "floor_plan": {
+    "room_a_width_m": 4.5,
+    "room_a_length_m": 5.0,
+    "room_b_width_m": 4.0,
+    "room_b_length_m": 4.5,
+    "corridor_depth_m": 1.6,
+    "height_m": 2.7,
+    "wall_thickness_m": 0.15,
+    "doors": {
+      "room_a": {
+        "offset_m": 2.8,
+        "width_m": 0.9,
+        "height_m": 2.1,
+        "open": false
+      },
+      "room_b": {
+        "offset_m": 0.4,
+        "width_m": 0.9,
+        "height_m": 2.1,
+        "open": false
+      }
+    }
+  },
+  "materials": {
+    "wall": 0.2,
+    "floor": 0.3,
+    "ceiling": 0.2,
+    "door": 0.15
+  },
+  "transmission": {
+    "enabled": true,
+    "center_freqs_hz": [
+      63,
+      125,
+      250,
+      500,
+      1000,
+      2000,
+      4000
+    ],
+    "loss_db": {
+      "door_a": [
+        15,
+        18,
+        22,
+        25,
+        28,
+        30,
+        32
+      ],
+      "door_b": [
+        15,
+        18,
+        22,
+        25,
+        28,
+        30,
+        32
+      ],
+      "wall_ab": [
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "wall_ac": [
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ],
+      "wall_bc": [
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55
+      ]
+    }
+  }
+}
